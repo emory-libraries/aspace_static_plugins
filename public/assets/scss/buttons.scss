@@ -1,0 +1,38 @@
+a.btn {
+    border-radius: 0;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .3s;
+
+
+    &.btn-primary {
+        background-color: $bright-blue;
+        border-color: 1px solid $bright-blue;
+        padding: 14px 28px;
+        color: $white;
+    
+    &:hover {
+        background-color: $mid-blue;
+        border-color: 1px solid $mid-blue;
+    }
+    }
+
+    &.btn-secondary {
+        background-color: $white;
+        border: 1px solid $bright-blue;
+        padding: 14px 28px;
+        color: $bright-blue;
+
+    &:hover {
+        background-color: $light-blue;
+
+    }
+
+    }
+
+    &.pill {
+        border-radius: 360px;
+        padding: 10px 28px;
+    }
+}
