@@ -1,0 +1,15 @@
+@import 'colors.scss';
+
+.emory-banner {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	background-color: $red;
+	border-color: $red;
+	z-index: 5000;
+	color: $white;
+	opacity: 0.95;
+	a {
+		color: $white;
+	}
+}
