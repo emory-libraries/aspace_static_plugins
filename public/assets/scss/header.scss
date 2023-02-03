@@ -1,0 +1,89 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+
+//overrides from application.css
+#header .logo {
+    float: none;
+    height: initial;
+    text-align: initial;
+}
+
+#header > .row {
+    height: initial;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.navbar-default {
+    background-color: transparent !important;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.navbar-header.top-bar {
+    background: transparent !important;
+    border: none;
+}
+
+.navbar-default {
+    .branding-header.navbar-brand {
+        padding: 15px 15px 0 15px;
+        height: initial;
+    }
+}
+
+//emory header styling
+.branding-header {
+    display: inline-block;
+    color: $dark-blue;
+    white-space: nowrap;
+    &:hover {
+      color: $mid-blue;
+      text-decoration: none;
+    }
+    z-index:99;
+}
+
+.branding-header.organization {
+    line-height: 23px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: $font-family-serif;
+    padding-left: 8px;
+    padding-right: 120px;
+}
+
+.branding-header.division {
+    padding-left: .5rem;
+    font-size: 1.5rem;
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+
+//nav bar
+//this needs to be removed eventually
+ul.nav > li:nth-child(n+5) {
+    display: none;
+}
+
+section#navigation nav {
+    div.navbar-collapse {
+        border-bottom: 1px solid $light-slate;
+        border-top: none;
+    }
+}
+
+// letter spacing looks a bit weird.
+.nav-link {
+    color: $mid-blue;
+    font-weight: 700;
+    font-size: .6875rem;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+

@@ -4,5 +4,9 @@
 @import "fonts.scss";
 @import "buttons.scss";
 @import "layout.scss";
+@import "header.scss";
 @import "emory-banner.scss";
+
+//responsive stlying always loaded last
+@import "responsive.scss"; 
 
