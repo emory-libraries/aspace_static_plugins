@@ -11,23 +11,25 @@
 
         <div class="collapse navbar-collapse" id="collapsemenu">
         <ul class="nav navbar-nav navbar-left">
-        <li><a class="nav-link" href="/">Home</a></li>
-        <li><a class="nav-link" target="_blank" href="https://search.libraries.emory.edu/">Library Search</a></li>
-        <li><a class="nav-link" target="_blank" href="https://aviary.libraries.emory.edu/">Aviary</a></li>
-        <li><a class="nav-link" target="_blank" href="https://digital.library.emory.edu/">Emory Digital Collections</a></li>
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" target="_blank" href="https://search.libraries.emory.edu/">Library Search</a></li>
+        <li class="nav-item"><a class="nav-link" target="_blank" href="https://aviary.libraries.emory.edu/">Aviary</a></li>
+        <li class="nav-item"><a class="nav-link" target="_blank" href="https://digital.library.emory.edu/">Emory Digital Collections</a></li>
         </ul>
         <ul class="nav nav navbar-nav navbar-right">
-            <%# TODO: add class="active" if we're on that page %>
-            <% $MAIN_MENU.each do |link| %>
-            <li><a class="nav-link" href="<%= app_prefix(link[0]) %>"><%= t(link[1]) %></a></li>
-            <% end %>
-            <% unless AppConfig[:pui_hide][:search_tab] %>
-            <li><a href="<%=  app_prefix('/search?reset=true') %>" title="<%= I18n.t('search_tab', :target => t('archive._plural'))%>">
-                <span class="fa fa-search" aria-hidden="true"></span>
-                <span class="sr-only"><%= I18n.t('search_tab', :target => t('archive._plural')) %></span>
-                </a>
-            </li>
-            <% end %>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Browse ▼
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/repositories">Repositories</a>
+              <a class="dropdown-item" href="/repositories/resources">Collections</a>
+              <a class="dropdown-item" href="/objects?limit=digital_object">Digital Materials</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" target="_blank" href="https://emorytest.aeon.atlas-sys.com/Logon">Request Materials</a></li>
+          <li class="nav-item"><a class="nav-link" href="/help">Help</a></li>
+          <li class="nav-item"><a class="nav-link" href="/search?reset=true">Search</a></li>
         </ul>
         </div>
     </div>
