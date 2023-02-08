@@ -1,5 +1,16 @@
 <%= stylesheet_link_tag "#{@base_url}/assets/css/style.css" %>
 
+<% unless AppConfig[:emory_ga_tracking_public].to_s.strip.empty? %>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= AppConfig[:emory_ga_tracking_public] %>"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '<%= AppConfig[:emory_ga_tracking_public] %>');
+  </script>
+<% end %>
+
 <%# Emory Banner %>
 <div class="container-fluid global-header emory-banner">
   <div class="alert">
