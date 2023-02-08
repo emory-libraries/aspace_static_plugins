@@ -1,0 +1,20 @@
+
+/**** Mobile First ****/
+@media (min-width: 768px) {
+    .nav-item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 14px;
+        height: 25px;
+        width: 1px;
+        background-color: $light-slate;
+    }
+}
+
+/**** Phone Screen ****/
+@media (max-width: 767px) {
+    #navigation nav .dropdown-menu {
+        border: none;
+    }
+}

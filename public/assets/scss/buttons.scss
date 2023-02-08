@@ -1,10 +1,9 @@
-a.btn {
+.btn {
     border-radius: 0;
     font-family: 'Open Sans';
     text-transform: uppercase;
     font-weight: bold;
     transition: .3s;
-
 
     &.btn-primary {
         background-color: $bright-blue;
