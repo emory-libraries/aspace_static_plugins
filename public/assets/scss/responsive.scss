@@ -14,9 +14,12 @@
 
 /**** Phone Screen ****/
 @media (max-width: 767px) {
+    /**** Navigation ****/
     #navigation nav .dropdown-menu {
         border: none;
     }
+
+    /**** Footer ****/
     #emory-as-footer footer {
         display: flex; 
         flex-direction: column;
