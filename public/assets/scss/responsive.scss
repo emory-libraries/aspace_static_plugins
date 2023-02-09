@@ -17,4 +17,17 @@
     #navigation nav .dropdown-menu {
         border: none;
     }
+    #emory-as-footer footer {
+        display: flex; 
+        flex-direction: column;
+        ul {
+            padding: 0px;
+        }
+        .footer-list, .copyright-signature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
 }
