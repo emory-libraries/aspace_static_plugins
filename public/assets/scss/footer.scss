@@ -10,7 +10,7 @@ footer {
     padding: 2.5rem calc((100vw - 1250px) / 2) 2.5rem calc((100vw - 1250px) / 2); 
     grid-row-gap: 0.9375rem;
     grid-column-gap: 1.875rem;
-  }
+  
   
   .logo {
     grid-column: 3; 
@@ -85,3 +85,4 @@ footer {
     display: flex;
     justify-content: center;
   }
+}
