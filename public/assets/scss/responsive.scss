@@ -12,11 +12,30 @@
     }
 }
 
+/**** Large Screens ****/
+@media (max-width: 1200px) {
+    /**** Navigation ****/
+    #navigation nav {
+        .nav.navbar-nav {
+            display: flex;
+            float: none !important;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+}
+
 /**** Phone Screen ****/
 @media (max-width: 767px) {
     /**** Navigation ****/
     #navigation nav .dropdown-menu {
         border: none;
+    }
+    //reset nav for bootstrap
+    #navigation nav {
+        .nav.navbar-nav {
+            display: block;
+        }
     }
 
     /**** Footer ****/
