@@ -8,16 +8,12 @@
                 <a href="/"><img class="logo" src="<%= asset_path(AppConfig[:pui_branding_img]) %>" alt="<%= AppConfig[:pui_branding_img_alt_text] %>" /></a>
             </div>
             <div class="branding-header">
-                <div class="row ml-0">
-                <div>
+                <div class="branding-header-wrapper">
                     <%= link_to 'Emory University', "https://emory.edu/", class: "branding-header organization" %>
                 </div>
-                </div>
-                <div class="row ml-0">
-                <div>
+                <div class="branding-header-wrapper">
                     <%= link_to 'Emory Libraries', 'https://libraries.emory.edu/', 
                         class: "branding-header division" %>
-                </div>
                 </div>
             </div>
         </div>
