@@ -34,6 +34,29 @@ a {
   background-color: transparent;
 }
 
+.hero-banner {
+  height: 333px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url(/assets/images/aspacehero.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .hero-banner-text {
+    text-align: center;
+    transform: translateY(75%);
+  }
+
+  h1 {
+    font-size: 2.625rem;
+    color: $white;
+  }
+  
+  p {
+    font-size: 1.625rem;
+    color: $white;
+  }
+}
+
 
 /**** Helper Classes ****/
  

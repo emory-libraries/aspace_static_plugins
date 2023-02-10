@@ -12,11 +12,35 @@
     }
 }
 
+/**** Large Screens ****/
+@media (max-width: 1200px) {
+    /**** Navigation ****/
+    #navigation nav {
+        .nav.navbar-nav {
+            display: flex;
+            float: none !important;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+}
+
 /**** Phone Screen ****/
 @media (max-width: 767px) {
     /**** Navigation ****/
     #navigation nav .dropdown-menu {
         border: none;
+    }
+    //reset nav for bootstrap
+    #navigation nav {
+        .nav.navbar-nav {
+            display: block;
+        }
+    }
+
+    /**** Hero Banner ****/
+    .hero-banner .hero-banner-text {
+        transform: translateY(45%);
     }
 
     /**** Footer ****/
@@ -32,5 +56,13 @@
             align-items: center;
         }
         
+    }
+}
+
+/**** Tiny Phone Screens ****/
+@media (max-width: 414px) {
+    /**** Hero Banner ****/
+    .hero-banner .hero-banner-text {
+        transform: translateY(17%);
     }
 }
