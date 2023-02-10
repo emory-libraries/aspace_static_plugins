@@ -1,5 +1,5 @@
 en:
   about:
     link_text: About ArchivesSpace
-  digital_object:
-    _singular: Digital Material
+  actions:
+    search_repo: Search this Repository
