@@ -38,6 +38,11 @@
         }
     }
 
+    /**** Hero Banner ****/
+    .hero-banner .hero-banner-text {
+        transform: translateY(45%);
+    }
+
     /**** Footer ****/
     #emory-as-footer footer {
         display: flex; 
@@ -51,5 +56,13 @@
             align-items: center;
         }
         
+    }
+}
+
+/**** Tiny Phone Screens ****/
+@media (max-width: 414px) {
+    /**** Hero Banner ****/
+    .hero-banner .hero-banner-text {
+        transform: translateY(17%);
     }
 }
