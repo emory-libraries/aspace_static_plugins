@@ -69,6 +69,10 @@ footer {
     display: flex; 
     flex-direction: column;
   }
+
+  span.footer-version {
+    margin-bottom: 10px;
+  }
   
   .copyright-signature {
     display: flex; 
