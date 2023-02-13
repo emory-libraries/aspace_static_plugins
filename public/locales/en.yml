@@ -1,3 +1,6 @@
 en:
   about:
     link_text: About ArchivesSpace
+  search_results:
+    filter:
+      head: Limit your search
