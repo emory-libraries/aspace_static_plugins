@@ -40,3 +40,11 @@
 #submit_search {
     margin-top: 10px;
 }
+
+/**** Nav Pill Button Override ****/
+.tabbing.nav-pills > li > a {
+    background-color: $bright-blue;
+}
+.tabbing.nav-pills > li > a.active {
+    background-color: $mid-blue;
+}
