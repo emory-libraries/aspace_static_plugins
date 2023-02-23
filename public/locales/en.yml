@@ -6,3 +6,8 @@ en:
       head: Limit your search
   actions:
     search_repo: Search this Repository
+digital_object:
+  _plural: "Digital Materials"
+agent:
+  _singular: "Names"
+  _plural: "Names"
