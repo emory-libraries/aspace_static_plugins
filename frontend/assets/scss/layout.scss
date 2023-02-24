@@ -1,3 +1,4 @@
-.center-block {
+//  removes padding around main body container on admin side which was indenting. this is about as specific as i could get without overrideing the file, but i don't think this class is used in many places based on my search.
+body > div.center-block {
     padding: 0;
 }
