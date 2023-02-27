@@ -25,6 +25,12 @@
     }
 }
 
+@media (max-width: 992px) {
+    #content {
+        margin: initial;
+    }
+}
+
 /**** Phone Screen ****/
 @media (max-width: 767px) {
     /**** Navigation ****/
