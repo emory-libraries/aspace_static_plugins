@@ -13,14 +13,20 @@ html, body {
 body {
   font-family: "Open Sans";
   color: $charcoal;
-
+  font-size: 1rem;
 }
 
-
 /**** Headers & Links ****/
-h1, h2, h4, h5{
+h1, h4, h5{
   font-family: $font-family-serif;
   color: $charcoal;
+}
+
+h2 {
+  font-family: $font-family-serif;
+  font-weight: normal;
+  font-size: 3rem; 
+  color: $base-blue;
 }
 
 h3 {
