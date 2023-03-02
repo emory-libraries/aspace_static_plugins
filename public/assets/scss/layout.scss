@@ -22,16 +22,22 @@ h1, h4, h5{
   color: $charcoal;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
 h2 {
   font-family: $font-family-serif;
   font-weight: normal;
-  font-size: 3rem; 
+  font-size: 2rem; 
   color: $base-blue;
+  margin-bottom: 15px;
 }
 
 h3 {
   font-family: $font-family-sans-serif;
   color: $charcoal;
+  font-size: 1.75rem;
 }
 
 a {
