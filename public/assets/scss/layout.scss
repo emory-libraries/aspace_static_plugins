@@ -20,18 +20,21 @@ body {
 h1, h4, h5{
   font-family: $font-family-serif;
   color: $charcoal;
+  font-size: 2.5rem;
 }
 
 h2 {
   font-family: $font-family-serif;
   font-weight: normal;
-  font-size: 3rem; 
+  font-size: 1.5rem; 
   color: $base-blue;
+  margin-bottom: 15px;
 }
 
 h3 {
   font-family: $font-family-sans-serif;
   color: $charcoal;
+  font-size: 1.25rem;
 }
 
 a {
