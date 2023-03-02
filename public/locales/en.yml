@@ -9,5 +9,7 @@ en:
 digital_object:
   _plural: "Digital Materials"
 agent:
-  _singular: "Names"
-  _plural: "Names"
+  _singular: 'Names'
+  _plural: 'Names'
+navbar:
+  login: 'Log In'
