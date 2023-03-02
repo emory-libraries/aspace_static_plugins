@@ -5,9 +5,10 @@ en:
     filter:
       head: Limit your search
   actions:
-    search_repo: Search this Repository
+    search_repo: Search this Repository and Request Materials
+    search_header: Search the Archives and Request Materials
 digital_object:
-  _plural: "Digital Materials"
+  _plural: 'Digital Materials'
 agent:
-  _singular: "Names"
-  _plural: "Names"
+  _singular: 'Names'
+  _plural: 'Names'
