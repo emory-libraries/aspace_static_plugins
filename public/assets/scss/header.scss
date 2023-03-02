@@ -45,15 +45,15 @@
         .dropdown-item {
             display: inline-block;
             width: 100%;
-            font-size: 1rem;
+            font-size: 0.6875rem; 
             color: $mid-blue;
             font-weight: 700;
             text-transform: uppercase;
             border-bottom: 1px solid $light-slate;
             margin-bottom: 8px;
 
-            &:last {
-                margin-bottom: 4px;
+            &:last-child {
+                margin-bottom: 2px;
             }
 
             &:hover {
@@ -74,7 +74,7 @@
     .nav-link {
         color: $mid-blue;
         font-weight: 700;
-        font-size: .6875rem;
+        font-size: .6875rem !important;
         text-transform: uppercase;
         letter-spacing: .025em;
         position: relative;
