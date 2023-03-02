@@ -1,0 +1,21 @@
+<%= setup_context :title => "Home", :suppress_breadcrumb => true %>
+
+<div class="row">
+  <div class="col-md-12">
+    <%= render_aspace_partial :partial => "shared/flash_messages" %>
+  </div>
+</div>
+
+<div class="row">
+  <% if !session[:user] %>
+  <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-offset-4 col-lg-4 md-mt20px p30px">
+    <main class="well" id="login-form-wrapper">
+      <h3 class="login-header mt0"><%= I18n.t "login.login_please" %></h3>
+      <a class="btn btn-primary login" href="/staff/auth/saml">Emory Archivist Login</a>
+      <div class="login-separator"><span>or</span></div>
+      <p class="login-text">Local Admin Login</p>
+      <%= render_aspace_partial :partial => "shared/login" %>
+    </main>
+  </div>
+  <% end %>
+</div>

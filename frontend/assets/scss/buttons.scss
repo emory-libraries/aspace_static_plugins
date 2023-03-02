@@ -1,0 +1,58 @@
+.btn {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  transition: 0.3s;
+
+  &.btn-primary.login {
+    border-radius: 0;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: $bright-blue;
+    border-color: 1px solid $bright-blue;
+    padding: 14px 28px;
+    color: $white;
+    width: 100%;
+    margin: 8px 0;
+
+    &:hover {
+      background-color: $mid-blue;
+      border-color: 1px solid $mid-blue;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $white;
+    border: 1px solid $bright-blue;
+    padding: 14px 28px;
+    color: $bright-blue;
+
+    &:hover {
+      background-color: $light-blue;
+    }
+  }
+
+  &.pill {
+    border-radius: 360px;
+    padding: 10px 28px;
+  }
+}
+
+/**** Admin Login Override ****/
+
+.login .btn.btn-primary {
+  padding: 10px 28px;
+  background-color: #ffffff;
+  border: 1px solid $bright-blue;
+  color: $bright-blue;
+  border-radius: 0;
+
+  &:hover {
+    background-color: $light-blue;
+  }
+}
+
+.login .form-control {
+  border-radius: 0;
+}

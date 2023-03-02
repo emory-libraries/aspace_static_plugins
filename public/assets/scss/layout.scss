@@ -6,32 +6,40 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
-
 }
 body {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   color: $charcoal;
   font-size: 1rem;
 }
 
 /**** Headers & Links ****/
-h1, h4, h5{
+h1,
+h4,
+h5 {
   font-family: $font-family-serif;
   color: $charcoal;
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 h2 {
   font-family: $font-family-serif;
   font-weight: normal;
-  font-size: 3rem; 
+  font-size: 2rem;
   color: $base-blue;
+  margin-bottom: 15px;
 }
 
 h3 {
   font-family: $font-family-sans-serif;
   color: $charcoal;
+  font-size: 1.75rem;
 }
 
 a {
@@ -40,11 +48,11 @@ a {
   background-color: transparent;
 }
 
-
 /**** Homepage ****/
 .hero-banner {
   height: 333px;
-  background: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url(/assets/images/aspacehero.jpeg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(/assets/images/aspacehero.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -58,7 +66,7 @@ a {
     font-size: 2.625rem;
     color: $white;
   }
-  
+
   p {
     font-size: 1.625rem;
     color: $white;
@@ -70,9 +78,8 @@ a {
   padding: 20px;
 }
 
-
 /**** Helper Classes ****/
- 
+
 /** Padding 10 **/
 .pd-10 {
   padding: 10px;
