@@ -1,3 +1,4 @@
 ### Differences between local and deployed instances.
 
 - image_tag in an .html.erb file doesn't get processed. need to write as html. [tech-docs](https://archivesspace.github.io/tech-docs/customization/theming.html) notes: "Since anything we add to plugins directory will not be precompiled by the Rails asset pipeline, we cannot use some of the tag helpers (like img_tag ), since that’s assuming the asset is being managed by the asset pipeline." 
+- There are other plugins that are active, but not in the archivesspace repo that we are working off of. So for example, the staff side header actually doesn’t come from the _global_header.html.erb file that we can see, it comes from an [oauth plugin](https://github.com/lyrasis/aspace-oauth). 
