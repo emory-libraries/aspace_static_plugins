@@ -4,5 +4,9 @@
 }
 
 .emory-admin-head {
-    background: #091c44;
+    background: $dark-blue;
+}
+
+header > div.global-header {
+    position: initial;
 }
