@@ -7,8 +7,12 @@
 </div>
 
 <div class="row">
+  <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0 col-lg-4 lg-min-w-450px p30px">
+    <h2>Welcome to Emory's ArchivesSpace</h2>
+    <p><i>ArchivesSpace is the repository of record for all archival and manuscript collections held by Emory University's special collections repositories. Oversight for policies around ArchivesSpace and for user training is managed by the Archival Description subcommittee of the Metadata Policy Committee. To create an account in ArchivesSpace, please contact the ArchivesSpace administrator at your library. To report problems or issues, please submit a ticket to <a href="mailto:coreserviceshelp@emory.edu">coreserviceshelp@emory.edu</a>.</i></p>
+  </div>
   <% if !session[:user] %>
-  <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-offset-4 col-lg-4 md-mt20px p30px">
+  <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0 col-lg-4 md-mt20px p30px">
     <main class="well" id="login-form-wrapper">
       <h3 class="login-header mt0"><%= I18n.t "login.login_please" %></h3>
       <a class="btn btn-primary login" href="/staff/auth/saml">Emory Archivist Login</a>
