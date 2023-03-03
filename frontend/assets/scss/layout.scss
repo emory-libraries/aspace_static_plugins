@@ -1,4 +1,38 @@
 //  removes padding around main body container on admin side which was indenting. this is about as specific as i could get without overrideing the file, but i don't think this class is used in many places based on my search.
 body > div.center-block {
-    padding: 0;
+  padding: 0;
+}
+
+/**** Staff Login Page ****/
+.login-separator {
+  font-size: 1.5rem;
+  margin: 1em auto;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 43%;
+    margin: 0 0.5em 0 -45%;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 43%;
+    margin: 0 -45% 0 0.5em;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+  }
+}
+
+.login-header {
+  text-align: center;
+}
+
+.login-text {
+  text-align: center;
 }
