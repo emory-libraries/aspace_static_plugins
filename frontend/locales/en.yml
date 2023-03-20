@@ -1,2 +1,32 @@
 navbar:
   login: 'Log In'
+# Below are the labels live in the Production frontend. L#19 adds in the MMS ID field.
+en:
+  accession:
+    user_defined: 
+      real_1: Appraised value
+      real_2: Purchase price
+      date_1: Appraisal date
+      date_1_inline_help: e.g. YYYY-MM-DD
+      enum_1: Purchase price currency
+  resource:
+    user_defined: 
+      real_1: Appraised value
+      real_2: Purchase price
+      date_1: Appraisal date
+      date_1_inline_help: e.g. YYYY-MM-DD
+      enum_1: Purchase price currency
+      string_2: MMS ID
+  digital_object:
+    user_defined: 
+      real_1: Appraised value
+      real_2: Purchase price
+      date_1: Appraisal date
+      date_1_inline_help: e.g. YYYY-MM-DD
+      enum_1: Purchase price currency
+  user_defined: &user_defined_attributes
+    real_1: Appraised value
+    real_2: Purchase price
+    date_1: Appraisal date
+    date_1_inline_help: e.g. YYYY-MM-DD
+    enum_1: Purchase price currency
