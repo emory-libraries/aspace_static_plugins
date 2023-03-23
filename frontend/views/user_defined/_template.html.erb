@@ -1,0 +1,14 @@
+<%# Overrides partial from ArchivesSpace v3.3.1: delivers only certain fields depending on object type. %>
+<% define_template("user_defined", jsonmodel_definition(:user_defined)) do |form| %>
+  <div class="subrecord-form-fields">
+    <% if controller_name == "accessions" %>
+      <%= form.label_and_textfield "real_1", {:label_opts => { :contextual => controller_name.singularize } } %>
+      <%= form.label_and_textfield "real_2", {:label_opts => { :contextual => controller_name.singularize } } %>
+      <%= form.label_and_date "date_1", {:label_opts => { :contextual => controller_name.singularize },  :field_opts => {:value => form.obj['date_1'].blank? ? "" : Date.strptime(form.obj['date_1'], "%Y-%m-%d")}} %>
+      <%= form.label_and_select "enum_1", form.possible_options_for("enum_1", true), {:label_opts => { :contextual => controller_name.singularize } }   %>
+    <% elsif controller_name == "resources" %>
+      <%= form.label_and_textfield "string_2", {:label_opts => { :contextual => controller_name.singularize } } %>
+    <% else %>
+    <% end %>
+  </div>
+<% end %>
