@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('headernav-container').style.backgroundColor =
       '#0080006b';
   }
-  if (window.location.hostname == 'emory-dev.lyrasistechnology.org') {
+  if (window.location.hostname == 'archives-test.libraries.emory.edu') {
     //set dev to yellow
     document.getElementById('headernav-container').style.backgroundColor =
       '#ffff006b';
