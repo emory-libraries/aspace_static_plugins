@@ -16,16 +16,16 @@ body {
   font-size: 1rem;
 }
 
-/**** Headers & Links ****/
+/**** Headings & Links ****/
 h1,
 h4,
 h5 {
   font-family: $font-family-serif;
-  color: $charcoal;
+  color: $base-blue;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -71,6 +71,8 @@ a {
   .hero-banner-text {
     text-align: center;
     transform: translateY(75%);
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+      1px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   h1 {
@@ -87,6 +89,49 @@ a {
 .pui-search-text {
   background-color: $light-slate;
   padding: 20px;
+}
+
+/**** Homepage ****/
+.aspace-sidebar-menu {
+  padding: 1.875rem;
+  background-color: $mid-blue;
+  margin: 0.9375rem;
+  box-shadow: 0 0 0 1px rgba(231, 234, 241, 0.3), 0 0 0 0.9375rem #004990;
+  font-family: $font-family-sans-serif;
+  margin-block-start: 2.5rem;
+  position: sticky;
+
+  span.sidebar-header {
+    letter-spacing: 0.038rem;
+    text-transform: uppercase;
+    color: $gold;
+    font-family: $font-family-sans-serif;
+    font-weight: bold;
+  }
+
+  ul.links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li.link-item {
+      margin-top: 0.625rem;
+      margin-bottom: 0.625rem;
+
+      a {
+        color: $light-slate;
+        transition: all 0.25s ease;
+        -webkit-transition: all 0.25s ease;
+        background: 0 0;
+        border: none;
+        display: -webkit-inline-box;
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 /**** Helper Classes ****/
