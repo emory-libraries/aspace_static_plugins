@@ -90,8 +90,9 @@ a {
   background-color: $light-slate;
   padding: 20px;
 }
+/**** END Homepage ****/
 
-/**** Homepage ****/
+/**** Help ****/
 .aspace-sidebar-menu {
   padding: 1.875rem;
   background-color: $mid-blue;
@@ -99,7 +100,6 @@ a {
   box-shadow: 0 0 0 1px rgba(231, 234, 241, 0.3), 0 0 0 0.9375rem #004990;
   font-family: $font-family-sans-serif;
   margin-block-start: 2.5rem;
-  position: sticky;
 
   span.sidebar-header {
     letter-spacing: 0.038rem;
@@ -133,6 +133,27 @@ a {
     }
   }
 }
+/****END Help ****/
+
+/**** Repositories ****/
+.page_actions ul.list-inline {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+
+.page_actions li.large-badge {
+  padding: 0;
+  margin: 5px;
+}
+
+.page_actions li.large-badge:nth-child(4) {
+  order: 99;
+}
+
+/**** END Repositories ****/
 
 /**** Helper Classes ****/
 
