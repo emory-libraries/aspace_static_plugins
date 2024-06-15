@@ -42,6 +42,12 @@ h3 {
   font-size: 1.75rem;
 }
 
+h3.h3-small {
+  font-family: $font-family-serif;
+  color: $base-blue;
+  font-size: 1.25rem;
+}
+
 bold {
   font-weight: 700;
 }
@@ -98,7 +104,7 @@ a {
 }
 /**** END Homepage ****/
 
-/**** Help ****/
+/**** Help and Help-Requesting ****/
 .aspace-sidebar-menu {
   padding: 1.875rem;
   background-color: $mid-blue;
