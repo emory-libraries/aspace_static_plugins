@@ -145,6 +145,16 @@ a {
     }
   }
 }
+
+.request-help-layout {
+  div.row {
+    margin-bottom: 2rem;
+  }
+  img {
+    border: 1px solid $base-slate;
+    border-radius: 3px;
+  }
+}
 /****END Help ****/
 
 /**** Repositories ****/
