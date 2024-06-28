@@ -42,6 +42,16 @@ h3 {
   font-size: 1.75rem;
 }
 
+h3.h3-small {
+  font-family: $font-family-serif;
+  color: $base-blue;
+  font-size: 1.25rem;
+}
+
+bold {
+  font-weight: 700;
+}
+
 // Search Header Override
 .repositories h3,
 .search h3 {
@@ -94,7 +104,7 @@ a {
 }
 /**** END Homepage ****/
 
-/**** Help ****/
+/**** Help and Help-Requesting ****/
 .aspace-sidebar-menu {
   padding: 1.875rem;
   background-color: $mid-blue;
@@ -133,6 +143,16 @@ a {
         text-decoration: none;
       }
     }
+  }
+}
+
+.request-help-layout {
+  div.row {
+    margin-bottom: 2rem;
+  }
+  img {
+    border: 1px solid $base-slate;
+    border-radius: 3px;
   }
 }
 /****END Help ****/
