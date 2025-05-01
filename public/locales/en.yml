@@ -5,6 +5,7 @@ en:
     filter:
       head: Limit your search
   actions:
+    print: Print Finding Aid
     search_repo: Search this Repository and Request Materials
     search_header: Search the Archives and Request Materials
 digital_object:
