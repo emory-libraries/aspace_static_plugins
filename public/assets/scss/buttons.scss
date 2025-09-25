@@ -10,7 +10,7 @@
         border-color: 1px solid $bright-blue;
         padding: 14px 28px;
         color: $white;
-    
+
     &:hover {
         background-color: $mid-blue;
         border-color: 1px solid $mid-blue;
@@ -39,6 +39,7 @@
 /**** Search Button Override ****/
 #submit_search {
     margin-top: 10px;
+    background-color: $bright-blue;
 }
 
 /**** Nav Pill Button Override ****/

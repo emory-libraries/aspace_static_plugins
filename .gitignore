@@ -3,3 +3,4 @@ prepros.config
 frontend/.DS_Store
 .DS_Store
 config.codekit3
+.sass-cache/

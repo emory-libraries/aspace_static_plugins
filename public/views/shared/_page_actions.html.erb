@@ -1,9 +1,12 @@
 <%# Overrides partial from ArchivesSpace v4.1.0: adds requesting link at bottom. %>
-<div title="<%= t('page_actions')%>" class="d-flex justify-content-end">
+<div title="<%= t('page_actions')%>" class="d-flex justify-content-end list-inline">
   <% ASUtils.wrap($RECORD_PAGE_ACTIONS[record.primary_type]).each do |page_action| %>
+
     <div class="large-badge text-center resource p-1">
+
       <% if page_action.has_key?('erb_partial') %>
         <%= render :partial => page_action.fetch('erb_partial'), :locals => { :record => record } %>
+
       <% else %>
         <% label = I18n.t(page_action.fetch('label'), :default => page_action.fetch('label')) %>
         <% icon_class = page_action.fetch('icon') %>
@@ -29,6 +32,7 @@
         <% end %>
       <% end %>
     </div>
+
   <% end %>
 
   <div class="large-badge text-center resource p-1">

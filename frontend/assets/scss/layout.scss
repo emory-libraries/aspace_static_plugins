@@ -36,3 +36,8 @@ body > div.center-block {
 .login-text {
   text-align: center;
 }
+
+// override of the AS table word-break setting bc we prefer the words not to break randomly.
+#tabledSearchResults td {
+  word-break: normal;
+}

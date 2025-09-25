@@ -158,21 +158,21 @@ a {
 /****END Help ****/
 
 /**** Repositories ****/
-.page_actions ul.list-inline {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-  justify-content: right;
-}
-
-.page_actions li.large-badge {
-  padding: 0;
-  margin: 5px;
-}
-
-.page_actions li.large-badge:nth-last-child(2) {
-  order: 99;
+.page_actions {
+  div.list-inline {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: right;
+  };
+  div.large-badge {
+    padding: 0;
+    margin: 5px;
+  };
+  div.large-badge:nth-last-child(2) {
+    order: 99;
+  }
 }
 
 /**** END Repositories ****/
