@@ -7,6 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
   if (window.location.hostname == 'archives-test.libraries.emory.edu') {
     //set dev to yellow
     document.getElementById('headernav-container').parentElement.style.backgroundColor =
-      '#ffd500';
+      '#ffffabf2';
   }
 });
